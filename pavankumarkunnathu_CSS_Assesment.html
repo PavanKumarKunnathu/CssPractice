@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Assesment</title>
+    <style>
+        nav{
+            background-color:#32a89e;
+            width: 96%;
+            height: 60px;
+            line-height: 20px;
+            padding:0px 12px; 
+            padding-left: 24px;
+            z-index: 1;
+            /* margin:0px 100px 0px 10px; */
+            position: fixed;
+        }
+        nav .left-title{
+            float:left;
+            margin-bottom: 150px;
+            padding-left: 70px;
+            font-weight: 800;
+            color:white;
+        }
+        nav ul{
+           
+            float:right;
+        }
+        nav ul li{
+            
+            list-style: none;
+            display: inline-block;
+            padding-right:80px ;
+            padding-top: 7px;
+            padding:0px 10px;
+            
+            
+        }
+        nav ul li a{
+            text-decoration: none;
+            font-weight: 800;
+            padding:20px;
+            color:white;
+        }
+        .nav_image {
+            position: relative;
+            padding-top: 60px;
+            
+            color: white;
+           
+           
+        }
+        .nav_image  img{
+
+            filter: brightness(40%);
+        }
+      
+        .nav_image p{
+            padding: 100px 200px 100px 100px; 
+            margin-top: 0px;;
+            margin-left: 120px;
+            top:20%;
+            position:absolute;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center ;
+            text-align: justify;
+            font-color:white;
+            
+        }
+        #heading-2{
+            text-align:center;
+            font-size:30px;
+            font-weight: bold;
+        }
+        .image_with_text {
+            display: flex;
+            padding-left: 40px;
+            }
+
+
+        .column1 {
+        flex: 50%;
+        padding: 10px;
+        height: 220px; 
+        
+        
+        }
+        .column1 img{
+            float:right;
+            height:200px;
+            width:400px;
+
+
+        }
+        .column2{
+            flex: 50%;
+        padding: 10px;
+        height: 220px;
+      
+
+        }
+
+        .column2 p{
+            width:400px;
+            font-size: 20px;
+            font-weight: 500;
+            padding-left: 20px;
+
+        }
+        
+        .row-3{
+            background-color: #32a89e;;
+            height:300px;
+            
+        }
+
+        .row-3 img{
+            padding-top:40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 120px;
+        }
+
+        .row-3 p{
+            padding-left: 26%;
+            text-align: center;
+            width:600px;
+            color: white;
+            font-size:20px;
+            font-weight: bold;
+        }
+
+        .row-4 {
+            display: flex;
+            padding-left:120px;
+        }
+        .col-4-1 img{
+            float:35%;
+            width: 250px;
+        }
+        .col-4-1 p{
+            
+            width: 240px;
+        }
+       
+
+        .col-4-2 img{
+            padding-left:150px;
+            float:35%;
+            width: 250px;
+        }
+        .col-4-2 p{
+            
+            width: 230px;
+            padding-left: 170px;
+        }
+
+        .col-4-2 h2{
+            padding-left: 170px;
+        }
+        .col-4-3 img{
+            padding-left:150px;
+            float:30%;
+            width: 250px;
+        }
+        .col-4-3 p{
+            
+            width: 250px;
+            padding-left: 170px;
+        }
+        .col-4-3 h2{
+            padding-left: 170px;
+        }
+
+        .row-5{
+            position: relative;
+        }
+        .row-5 img{
+            filter: brightness(40%);
+        }
+        .row-5 h2{
+            position:absolute;
+            top: 38%;
+            left: 38%;
+            text-align: center;
+            font-size: 35px;
+            
+            color: white;
+
+
+        }
+        .row-5 button{
+            position: absolute;
+            top: 65%;
+            left: 44%;
+            background-color: teal;
+            width: 150px;
+            height: 30px;
+            border-radius: 20px;
+            color:white;
+            
+        }
+
+        .row-6 {
+            display: flex;
+        
+        }
+        .row-7 {
+            display: flex;
+        
+        }
+
+         .card {
+             
+        margin-left:70px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        width: 18%;
+        border-radius: 5px;
+        height: 50%;
+        padding-bottom: 30px;
+        }
+
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .card h3{
+            padding-left: 10px;
+        }
+        .card p{
+            width:200px;
+            padding-left: 20px;
+            font-size:13px;
+        }
+        .card h2{
+            text-align: center;
+        }
+        .card .preview_button{
+            
+           margin-left: 15px;
+            background-color: rgb(167, 167, 162);
+            width: 90px;
+            height: 35px;
+            border-radius: 20px;
+            color:white;
+            
+        }
+        .card .buynow_button{
+            
+            margin-left: 15px;
+             background-color: teal;
+             width: 90px;
+             height: 35px;
+             border-radius: 20px;
+             color:white;
+             
+         }
+         .footer{
+             text-align: center;
+             background-color: #32a89e;
+             color: white;
+             
+             font-size: 18px;
+             top:50%;
+             font-weight:bold;
+             height: 40px;
+         }
+        
+
+       
+
+
+            
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left-title">
+            <h2>Teach our Teachers<h2>
+        </div>
+    
+        <ul>
+            <li><a href="">Why us?</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Resources</a></li>
+            <li><a href="">Get in Touch</a></li>
+        </ul>
+    </nav>
+    
+    
+    <div class="nav_image">
+            
+            
+            <img src="assets/you-x-ventures-Oalh2MojUuk-unsplash.png" alt='you-x-ventures-Oalh2MojUuk-unsplash' width="100%"  />
+            <p>World's most popular online market place  for <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+               teacher collaboration and edupreneurship</p>
+    </div>
+    
+
+    <h3 id="heading-2">Incredible things can happen when teacher  work together</h3>
+    <div class="image_with_text">
+        
+        <div class="column1" >
+            <img src="assets/Image 3.png" />
+        </div>
+        <div class="column2" >
+            <p>
+                preparing resources for conducting classes is tough.We take care of everyrhing for you and make teaching easy 
+            fascinating.  When teacher works in coherence, it pave the ways for Edupreneurship.
+            </p>
+           
+        </div>
+
+      </div>
+    
+      
+    <div class="row-3">
+        <img src="assets/NoPath.png" />
+        <p> preparing for classes is now a problem of the past. Collobrate with  amazing teachers all over the world and grow professionally.
+            Your Edupreneurial journey starts here !
+
+        </p>
+
+    </div>
+
+    <br>
+
+
+    <div class="row-4">
+        <div class="col-4-1">
+            <img src="assets/NoPath - Copy (2).png" />
+            <h2>Become an Edupreneur</h2>
+            <p>Share your  treasure trove of teaching resources and generate an alternate source of an income </p>
+        </div>
+        <div class="col-4-2">
+            <img src="assets/NoPath - Copy (3).png" />
+            <h2>Teacher Resources</h2>
+            <p>save a day's effort every week by  acquiring  resources  tailored to your unique teaching needs</p>
+        </div>
+        <div class="col-4-3">
+            <img src="assets/NoPath - Copy (4).png" />
+            <h2>Mentorship Program</h2>
+            <p>Upskill  Yourself  and grow professionallyby seeking guidance</p>
+        </div>
+    </div>
+
+    <br>
+    <div class="row-5">
+        <img src="assets/monica-melton-oc_XTqWezp4-unsplash.png" alt="monica" width="100%" height="350px" />
+        <h2>Looking for a mentor</h2>
+        <button >Get in touch</button>
+    </div>
+
+    <br>
+
+
+    <div class="row-6">
+        <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <br>
+          
+          
+    </div>
+    <br>    
+    <div class="row-7">
+        <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/Image 1.png" alt="card image" style="width:100%">
+            <div class="card_data">
+              <h3><b>The Ultimate Guide to right  angle trignometry</b></h3> 
+              <p>A short Description here which tellu us that topics in brief</p> 
+              <h2>INR 300</h2>
+              <button  class="preview_button" name="preview1" id="preview1">preview</button>
+              <button class="buynow_button" name="buynow1" id="buynow1">Buy Now</button>
+            </div>
+        </div>   
+    </div>
+    <br>
+    <div class="footer" >
+        <p>Copyright  2020. All right Reserved </p>  
+    </div>
+
+    
+
+     
+       
+    
+   
+</body>
+</html>
